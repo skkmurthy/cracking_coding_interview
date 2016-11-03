@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include <assert.h>
+#include "util_funcs.h"
 using namespace std;
 
 /**
@@ -7,7 +8,12 @@ using namespace std;
  */ 
 int main (int argc, char *argv[])
 {
-    cout << "hello world" << endl;
-    return(0);
+    const char *str = "abcd";
+    assert(check_unique_chars(str, strlen(str)));
+
+    str = "aabcd";
+    assert(!check_unique_chars(str, strlen(str)));
+
+    return (0);
 }
 

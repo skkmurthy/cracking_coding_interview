@@ -23,9 +23,9 @@ OUTFILE=$(OUTDIR)/cci
 CFG_INC=
 CFG_LIB=
 CFG_OBJ=
-COMMON_OBJ=$(OUTDIR)/cci.o 
+COMMON_OBJ=$(OUTDIR)/cci.o $(OUTDIR)/util_funcs.o 
 OBJ=$(COMMON_OBJ) $(CFG_OBJ)
-ALL_OBJ=$(OUTDIR)/cci.o 
+ALL_OBJ=$(OUTDIR)/cci.o $(OUTDIR)/util_funcs.o 
 
 COMPILE=g++ -c    -g -o "$(OUTDIR)/$(*F).o" $(CFG_INC) "$<"
 LINK=g++  -g -o "$(OUTFILE)" $(OBJ) $(CFG_LIB)
@@ -84,9 +84,9 @@ OUTFILE=$(OUTDIR)/cci
 CFG_INC=
 CFG_LIB=
 CFG_OBJ=
-COMMON_OBJ=$(OUTDIR)/cci.o 
+COMMON_OBJ=$(OUTDIR)/cci.o $(OUTDIR)/util_funcs.o 
 OBJ=$(COMMON_OBJ) $(CFG_OBJ)
-ALL_OBJ=$(OUTDIR)/cci.o 
+ALL_OBJ=$(OUTDIR)/cci.o $(OUTDIR)/util_funcs.o 
 
 COMPILE=g++ -c   -o "$(OUTDIR)/$(*F).o" $(CFG_INC) "$<"
 LINK=g++  -o "$(OUTFILE)" $(OBJ) $(CFG_LIB)

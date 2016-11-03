@@ -5,7 +5,8 @@
     TemplateName="GNU C/C++"
     WorkingDir="."
     BuildSystem="automakefile"
-    BuildMakeFile="%rp%rn.mak">
+    BuildMakeFile="%rp%rn.mak"
+    VCSProject="Git:">
     <Config
         Name="Debug"
         Type="gnuc"
@@ -262,11 +263,15 @@
             Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go"
             GUID="{C38BE085-2965-4F68-806E-CF4CDB8949A7}">
             <F N="cci.cpp"/>
+            <F N="util_funcs.cpp"/>
         </Folder>
         <Folder
             Name="Header Files"
             Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
-            GUID="{A193C4DF-1631-4067-AA9D-D1BC3BD0440F}"/>
+            GUID="{A193C4DF-1631-4067-AA9D-D1BC3BD0440F}">
+            <F N="include/ArrayList.h"/>
+            <F N="util_funcs.h"/>
+        </Folder>
         <Folder
             Name="Resource Files"
             Filters="*.ico;*.cur;*.dlg"
